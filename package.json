@@ -1,0 +1,27 @@
+{
+  "name": "piano-timeline",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --client-log-level warning --config webpack.config.js",
+    "build": "webpack --config webpack.config.build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.42.0",
+    "webpack-bundle-analyzer": "^3.6.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

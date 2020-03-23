@@ -1,0 +1,5 @@
+node_modules
+dist
+deploy.sh
+taox.pub
+build.tar.gz
