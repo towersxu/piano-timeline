@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'inline-source-map',
   mode: 'development',
   entry: {
-    'index': [path.resolve(__dirname, "./src/index.ts")],
+    'PianoTimeline': [path.resolve(__dirname, "./src/index.tsx")],
     // 'pinao-roll': [path.resolve(__dirname, "./src/components/PianoRoll/PianoRoll")]
   },
   output: {
@@ -17,21 +17,25 @@ module.exports = {
     // Add `.ts` and `.tsx` as a resolvable extension.
     extensions: [".ts", ".tsx", ".js", ".jsx"]
   },
+  externals: {
+    react: 'react'
+  },
   devServer: {
     contentBase: path.join(__dirname, "./"),
     compress: true,
-    port: 9000,
+    port: 9002,
     host: '127.0.0.1'
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx|ts)$/,
+        test: /\.(js|jsx|tsx|ts)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
             presets: [
+              '@babel/preset-react',
               '@babel/preset-typescript',
               [
                 '@babel/preset-env',
