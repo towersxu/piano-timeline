@@ -1,0 +1,26 @@
+.wrap {
+  width: 5000px;
+}
+.panelRow {
+  display: flex;
+}
+.panelItem {
+  width: 30px;
+  height: 10px;
+  background: #fafafa;
+  border-top: 1px solid #9a9b9c;
+  border-right: 1px solid #9a9b9c;
+}
+.panelItemName {
+  width: 30px;
+  height: 10px;
+  flex-shrink: 0;
+  border-top: 1px solid #9a9b9c;
+  border-right: 1px solid #9a9b9c;
+  text-align: center;
+  line-height: 10px;
+  font-size: 12px;
+}
+.active {
+  background: #d5b3ff;
+}

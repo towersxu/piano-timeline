@@ -5,7 +5,7 @@ export default {
   title: 'Main'
 };
 
-export const ToStorybook = () => <App />
+export const ToStorybook = () => <App style="width: 5000px"/>
 
 ToStorybook.story = {
   name: 'PianoRoll',
